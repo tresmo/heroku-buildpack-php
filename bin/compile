@@ -34,8 +34,6 @@ rm -rf $CACHE_DIR/*
 #copy .htaccess from template
 cp www/_.htaccess www/.htaccess
 
-rm ./local.xml
-
 # write local.xml
 cat >>www/app/etc/local.xml <<EOF
 <?xml version="1.0"?>
