@@ -80,6 +80,8 @@ cat >>www/app/etc/local.xml <<EOF
 </config>
 EOF
 
+cat www/app/etc/local.xml
+
 
 # keep Procfile
 if [ -f www/Procfile ]; then
