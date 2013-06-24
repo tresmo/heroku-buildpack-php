@@ -23,7 +23,10 @@ cd $BUILD_DIR
 # move app things to www
 mkdir -p $CACHE_DIR/www
 mv * $CACHE_DIR/www
-mv $CACHE_DIR/www .
+mkdir www
+mv $CACHE_DIR/www/web/* www/
+
+rm -rf $CACHE_DIR/*
 
 # keep Procfile
 if [ -f www/Procfile ]; then
