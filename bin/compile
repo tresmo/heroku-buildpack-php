@@ -76,7 +76,7 @@ cat >>www/app/etc/local.xml <<END_OF_LOCAL_XML
             <date><![CDATA[Fri, 24 Aug 2012 09:51:00 +0000]]></date>
         </install>
         <crypt>
-            <key><![CDATA[$CRYPTO_KEY]]></key>
+            <key><![CDATA[\$CRYPTO_KEY]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
@@ -85,10 +85,10 @@ cat >>www/app/etc/local.xml <<END_OF_LOCAL_XML
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[$DB_HOST]]></host>
-                    <username><![CDATA[$DB_USERNAME]]></username>
-                    <password><![CDATA[$DB_PASSWORD]]></password>
-                    <dbname><![CDATA[$DB_NAME]]></dbname>
+                    <host><![CDATA[\$DB_HOST]]></host>
+                    <username><![CDATA[\$DB_USERNAME]]></username>
+                    <password><![CDATA[\$DB_PASSWORD]]></password>
+                    <dbname><![CDATA[\$DB_NAME]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
                     <type><![CDATA[pdo_mysql]]></type>
